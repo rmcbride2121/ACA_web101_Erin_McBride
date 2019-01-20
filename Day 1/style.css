@@ -43,7 +43,6 @@ body {
   .has-border {
     border-radius: 25px;
     border: 2px solid #0795C3;
-    background: none;
     padding: 20px; 
   }
   
