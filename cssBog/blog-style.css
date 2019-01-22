@@ -1,0 +1,42 @@
+body {
+    background-color: lightgray;
+}
+
+article {
+    background-color: white;
+    margin: 3px auto;
+    width: 50%;
+    padding: 2px 5px;
+}
+
+.top-article {
+    margin-top: 25px;
+}
+
+.bottom-article {
+    margin-bottom: 25px;
+}
+
+ .title {
+     font-size: 22px;
+     padding: 5px auto;
+ }
+
+ .subtitle {
+    font-size: 16px;
+    padding: 5px auto;
+ }
+
+ h2, p {
+     margin: 5px;
+     font-weight: normal;
+ }
+
+ h3 {
+     margin: 15px 5px;
+     font-weight: normal;
+ }
+
+ .first-letter:hover {
+    font-size: 50px;
+  }
