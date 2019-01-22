@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+}
+
+header, main h3, main p {
+    margin: 25px;
+}
+
+main h2 {
+    background-color: lightgray;
+    color: blue;
+}
