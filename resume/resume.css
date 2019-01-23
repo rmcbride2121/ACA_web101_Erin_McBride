@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 2.5rem auto 5rem;
     width: 75%;
 }
 
@@ -23,6 +23,10 @@ main h2 {
     padding-left: 10px;
 }
 
-ul {
+ul, .degree {
     column-count: 2;
+}
+
+.degree {
+    list-style-type: none;
 }
