@@ -1,3 +1,8 @@
+body {
+    margin: auto;
+    width: 75%;
+}
+
 header {
     text-align: center;
 }
@@ -9,4 +14,15 @@ header, main h3, main p {
 main h2 {
     background-color: lightgray;
     color: blue;
+    margin-right: 25px;
+    padding: auto;
+    border-radius: 15px;
+    height: 3rem;
+    display: block;
+    padding-top: 1.5rem;
+    padding-left: 10px;
+}
+
+.center {
+    text-align: left;
 }
