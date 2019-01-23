@@ -23,6 +23,6 @@ main h2 {
     padding-left: 10px;
 }
 
-.center {
-    text-align: left;
+ul {
+    column-count: 2;
 }
