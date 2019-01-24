@@ -1,6 +1,4 @@
-body {
-    background-color: f5fffa;
-}
+
 
 img {
     width: 100%;
@@ -14,6 +12,22 @@ img {
       padding-left: 5rem;
       
   }
+
+  /* Media Queries */
+
+  /* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
 
   /* Large and up (Desktops) */
 @media (min-width: 992px) {
