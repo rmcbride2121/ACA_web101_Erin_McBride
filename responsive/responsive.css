@@ -1,0 +1,23 @@
+body {
+    background-color: f5fffa;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    float: left;
+    margin-right:15px;
+  }
+
+  .top-news {
+      padding-left: 5rem;
+      
+  }
+
+  /* Large and up (Desktops) */
+@media (min-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
