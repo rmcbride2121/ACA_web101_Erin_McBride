@@ -1,4 +1,7 @@
-
+body {
+    margin: 2.5rem auto 5rem;
+    width: 85%;
+}
 
 img {
     width: 100%;
