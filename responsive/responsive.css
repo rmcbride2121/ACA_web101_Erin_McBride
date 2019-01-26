@@ -1,19 +1,24 @@
 body {
-    margin: 2.5rem auto 5rem;
-    width: 85%;
+    display: grid;
+
+    grid-template-columns: 70% 30%;
+    /* grid-template-rows: 70% 30%; */
 }
 
 img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    float: left;
-    margin-right:15px;
+    width: 90%;
+}
+.item-1 {
+    grid-area: head;
   }
-
-  .top-news {
-      padding-left: 5rem;
-      
+  .item-2 {
+    grid-area: main;
+  }
+  .item-3 {
+    grid-area: side;
+  }
+  .item-4 {
+    grid-area: footer;
   }
 
   /* Media Queries */
