@@ -8,6 +8,13 @@ body {
 img {
     width: 90%;
 }
+
+button {
+    background-color:  gray;
+    height: 25px;
+    width: 100px;
+}
+
 .item-1 {
     grid-area: head;
   }
@@ -24,6 +31,18 @@ img {
   /* Media Queries */
 
   /* Small and up (Landscape Phones) */
+
+@media (max-width: 576px) {
+    body {
+        display: block;
+    }
+
+    .grid-item-2 {
+        display: none;
+        grid-template-columns: 100%;
+    }
+}
+  
 @media (min-width: 576px) {
     body {
         background-color: green;
