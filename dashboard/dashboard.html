@@ -20,14 +20,15 @@
         ></iframe>
       </div>
       <div class="item2">
-        <h2>To Do List</h2>
-        <ul>
-          <li><input type="checkbox" />Wake up</li>
-          <li><input type="checkbox" />Go to Work</li>
-          <li><input type="checkbox" />Come Home</li>
-          <li><input type="checkbox" />Sleep</li>
-          <li><input type="checkbox" />Repeat</li>
-        </ul>
+        <div id="checkboxes">
+            <h2>To Do List</h2>
+                <ul>
+                    <li><input type="checkbox"> checkbox 1</li>
+                    <li><input type="checkbox"> checkbox 2</li>
+                    <li><input type="checkbox"> checkbox 3</li>
+                    <li><input type="checkbox"> checkbox 4</li>
+                </ul>
+        </div>
       </div>
       <div class="item3">
         <iframe
@@ -38,162 +39,38 @@
         ></iframe>
       </div>
       <div class="item4">
-        <!-- <img src="calculator_image.png" alt="calculator icon"> -->
-        <!-- <FORM NAME="Calc">
-          <TABLE BORDER="4">
-            <TR>
-              <TD>
-                <INPUT TYPE="text" NAME="Input" Size="16" />
-                <br />
-              </TD>
-            </TR>
-            <TR>
-              <TD>
-                <INPUT
-                  TYPE="button"
-                  NAME="one"
-                  VALUE="  1  "
-                  OnClick="Calc.Input.value += '1'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="two"
-                  VALUE="  2  "
-                  OnCLick="Calc.Input.value += '2'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="three"
-                  VALUE="  3  "
-                  OnClick="Calc.Input.value += '3'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="plus"
-                  VALUE="  +  "
-                  OnClick="Calc.Input.value += ' + '"
-                />
-                <br />
-                <INPUT
-                  TYPE="button"
-                  NAME="four"
-                  VALUE="  4  "
-                  OnClick="Calc.Input.value += '4'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="five"
-                  VALUE="  5  "
-                  OnCLick="Calc.Input.value += '5'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="six"
-                  VALUE="  6  "
-                  OnClick="Calc.Input.value += '6'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="minus"
-                  VALUE="  -  "
-                  OnClick="Calc.Input.value += ' - '"
-                />
-                <br />
-                <INPUT
-                  TYPE="button"
-                  NAME="seven"
-                  VALUE="  7  "
-                  OnClick="Calc.Input.value += '7'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="eight"
-                  VALUE="  8  "
-                  OnCLick="Calc.Input.value += '8'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="nine"
-                  VALUE="  9  "
-                  OnClick="Calc.Input.value += '9'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="times"
-                  VALUE="  x  "
-                  OnClick="Calc.Input.value += ' * '"
-                />
-                <br />
-                <INPUT
-                  TYPE="button"
-                  NAME="clear"
-                  VALUE="  c  "
-                  OnClick="Calc.Input.value = ''"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="zero"
-                  VALUE="  0  "
-                  OnClick="Calc.Input.value += '0'"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="DoIt"
-                  VALUE="  =  "
-                  OnClick="Calc.Input.value = eval(Calc.Input.value)"
-                />
-                <INPUT
-                  TYPE="button"
-                  NAME="div"
-                  VALUE="  /  "
-                  OnClick="Calc.Input.value += ' / '"
-                />
-                <br />
-              </TD>
-            </TR>
-          </TABLE>
-        </FORM>
-
-        <p align="center">
-          <font face="arial" size="-2">This free script provided by</font><br />
-          <font face="arial, helvetica" size="-2"
-            ><a href="http://javascriptkit.com">JavaScript Kit</a></font
-          >
-        </p> -->
         <div id='calc-contain'>
   
-                <form name="calculator">
+            <form name="calculator">
                   
-                  <input type="text" name="answer" />
-                  <br>
+                <input type="text" name="answer" />
+                <br>
                   
-                  <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-                  <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
-                  <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
-                  <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
-                  <br/>
+                <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+                <br/>
                   
-                  <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
-                  <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
-                  <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
-                  <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
-                  </br>
+                <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+                </br>
                 
-                  <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
-                  <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
-                  <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
-                  <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
-                  </br>
+                <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+                <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+                <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+                <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+                </br>
               
-                  <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-                  <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-                  <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
-                  <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
-                  </br>
-        
-          
-                </form>
-              </div>
+                <input type="button" value=" c " onclick="calculator.answer.value = ''" />
+                <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+                <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+                </br>
+            </form>
+        </div>
       </div>
     </div>
   </body>

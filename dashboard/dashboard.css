@@ -1,6 +1,6 @@
 body {
-  background-image: url(nasa_earth.jpg);
-  background-size: auto 100%;
+  background-color: #003842;
+  background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,16 +15,16 @@ body {
   grid-area: main;
 }
 .item4 {
-  grid-area: right;
+  grid-area: left;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     "header header header header header header"
-    "menu menu ...   ...   main main"
-    "menu menu ...   ...  right right"
-    "menu menu ...   ...  right right";
+    "main main ...   ...   ...  menu"
+    "left left ...   ...   ...  menu"
+    "left left ...   ...   ...  menu";
   grid-gap: 10px;
   /* background-color: #2196F3; */
   padding: 10px;
@@ -39,12 +39,19 @@ body {
   font-size: 20px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#checkboxes {
+    border: solid red;
+    margin: auto 10%;
+    text-align: left;
 }
 
-form {
-    margin: 0 auto;
+#checkboxes ul {
+    margin: 0;
+    list-style: none;
+  }
+
+ul {
+    border: solid red;
+    text-align: left;
 }
+
