@@ -5,28 +5,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 75px;
+}
+
 .item1 {
   grid-area: header;
 }
 .item2 {
-  grid-area: menu;
-  /* background-color: red;
-  opacity: 0.5; */
+  grid-area: todo;
+  background-color: black;
+  opacity: 0.75;
+  margin-bottom: 50%;
+  border-radius: 15px;
 }
 .item3 {
-  grid-area: main;
+  grid-area: clock;
 }
 .item4 {
-  grid-area: left;
+  grid-area: calculator;
+  background-color: black;
+  opacity: 0.75;
+  margin-bottom: 50%;
+  border-radius: 15px;
+}
+.item5 {
+    grid-area: date;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header"
-    "main main ...   ...   ...  menu"
-    "left left ...   ...   ...  menu"
-    "left left ...   ...   ...  menu";
+    "clock ... header header ... date"
+    "calculator ... ...   ...   ...  todo"
+    "... ... ...   ...   ...  ...";
   grid-gap: 10px;
   /* background-color: #2196F3; */
   padding: 10px;
