@@ -1,73 +1,107 @@
 body {
-    background-color: #003842;
-    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  h1 {
-      font-size: 75px;
-  }
-  
-  .item1 {
-    grid-area: header;
-  }
-  .item2 {
-    grid-area: todo;
-    background-color: black;
-    opacity: 0.75;
-    margin-bottom: 50%;
-    border-radius: 15px;
-  }
-  .item3 {
-    grid-area: clock;
-  }
-  .item4 {
-    grid-area: calculator;
-    background-color: black;
-    opacity: 0.75;
-    margin-bottom: 50%;
-    border-radius: 15px;
-  }
-  .item5 {
-      grid-area: date;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      "clock ... header header ... date"
-      "calculator ... ...   ...   ...  todo"
-      "... ... ...   ...   ...  ...";
-    grid-gap: 10px;
-    /* background-color: #2196F3; */
-    padding: 10px;
-    margin: auto;
-  }
-  
-  .grid-container > div {
-    /* border: solid red; */
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    text-align: center;
-    padding: 75px 0;
-    font-size: 20px;
-  }
-  
-  #checkboxes {
-      /* border: solid red; */
-      margin: auto 10%;
-      text-align: left;
-      /* background-color: blue;
-      opacity: 0.5; */
-  }
-  
-  #checkboxes ul {
-      margin: 0;
-      list-style: none;
-    }
-  
-  ul {
-      /* border: solid red; */
-      text-align: left;
-      padding-left: 0;
-  }
+  background-color: #003842;
+  background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: todo;
+  background-color: black;
+  opacity: 0.75;
+  height: 280px;
+  border-radius: 15px;
+}
+.item3 {
+  grid-area: clock;
+}
+.item4 {
+  grid-area: calculator;
+  background-color: black;
+  opacity: 0.75;
+  height: 280px;
+  border-radius: 15px;
+}
+.item5 {
+  grid-area: date;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "clock ... header header ... date"
+    "calculator ... ...   ...   ...  todo"
+    "... ... ...   ...   ...  ...";
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin: auto;
+}
+
+.grid-container > div {
+  /* border: solid red; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 75px 0;
+  font-size: 20px;
+}
+
+#checkboxes {
+  /* border: solid red; */
+  margin: auto 10%;
+}
+
+#checkboxes ul {
+  margin: auto;
+  list-style: none;
+}
+
+ul {
+  /* border: solid red; */
+  padding-left: 0;
+}
+
+/* Calculator */
+
+#root {
+  margin: auto;
+  /* padding: 5px; */
+  background-color: gray;
+  width: 200px;
+  height: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1px;
+  grid-template-areas:
+    "display display display display"
+    "cdisplay cdisplay cdisplay cdisplay"
+    "clear clear divide multiply"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+}
+
+#display {
+  grid-area: display;
+}
+#cdisplay {
+  grid-area: cdisplay;
+}
+#clear {
+  grid-area: clear;
+}
+#divide {
+  grid-area: divide;
+}
+#multiply {
+  grid-area: multiply;
+}
