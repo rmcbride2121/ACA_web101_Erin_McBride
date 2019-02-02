@@ -1,0 +1,20 @@
+.calculator {
+    width: 340px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1px;
+}
+
+.buttons {
+    background-color: gray;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#operators {
+    background-color: orange;
+}
