@@ -1,0 +1,34 @@
+#root {
+  padding: 5px;
+  background-color: black;
+  width: 240px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1px;
+  grid-template-areas:
+    "display display display display"
+    "cdisplay cdisplay cdisplay cdisplay"
+    "clear clear divide multiply"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+}
+
+#display {
+  grid-area: display;
+}
+#cdisplay {
+  grid-area: cdisplay;
+}
+#clear {
+  grid-area: clear;
+}
+#divide {
+  grid-area: divide;
+}
+#multiply {
+  grid-area: multiply;
+}

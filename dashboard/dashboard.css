@@ -11,6 +11,7 @@ h1 {
 
 .item1 {
   grid-area: header;
+  margin: auto;
 }
 .item2 {
   grid-area: todo;
@@ -21,6 +22,7 @@ h1 {
 }
 .item3 {
   grid-area: clock;
+  margin: auto;
 }
 .item4 {
   grid-area: calculator;
