@@ -22,7 +22,6 @@ h1 {
 }
 .item3 {
   grid-area: clock;
-  margin: auto;
 }
 .item4 {
   grid-area: calculator;
@@ -106,4 +105,39 @@ ul {
 }
 #multiply {
   grid-area: multiply;
+}
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+  .item3, .quote, .item4 {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-areas:
+    "... ... header header ... ..."
+    "... ... date date ... ..."
+    "... ... todo todo ... ...";
+  }
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
 }
