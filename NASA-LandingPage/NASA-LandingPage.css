@@ -1,0 +1,52 @@
+body {
+    font-family: raleway, sans-serif;
+}
+
+/* Container Styles */
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 450px 324px;
+  grid-gap: 2rem;
+  width: 850px;
+  margin: auto;
+}
+
+/* Image Styles */
+
+.image {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  background-image: url(nasa_space_image.jpg);
+  width: 850px;
+}
+
+/* Footer Styles */
+
+.footer {
+    background-color: rgb(218, 196, 196);
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+input {
+    border: solid 1px gray;
+}
+
+textarea {
+    max-width: 500px;
+}
+
+button {
+    background-color: rgb(80, 78, 78);
+    color: white;
+    height: 20px;
+    width: 100px;
+}
