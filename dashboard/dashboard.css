@@ -9,6 +9,8 @@ h1 {
   font-size: 75px;
 }
 
+/* Grid Items */
+
 .item1 {
   grid-area: header;
   margin: auto;
@@ -34,6 +36,8 @@ h1 {
   grid-area: date;
 }
 
+/* Grid Container */
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -53,6 +57,8 @@ h1 {
   padding: 75px 0;
   font-size: 20px;
 }
+
+/* To Do List */
 
 #checkboxes {
   /* border: solid red; */
@@ -110,37 +116,33 @@ ul {
 /* Media Queries */
 
 @media (max-width: 576px) {
-  .item3, .quote, .item4, .item5 {
+  .item3,
+  .quote,
+  .item4,
+  .item5 {
     display: none;
   }
 
   .grid-container {
     grid-template-areas:
-    "... ... header header ... ..."
-    "... ... todo todo ... ...";
+      "... ... header header ... ..."
+      "... ... todo todo ... ...";
   }
 }
 
 /* Medium and up (Tablets) */
 @media (max-width: 768px) {
-  .item3, .item4, .item5 {
+  .item3,
+  .item4,
+  .item5 {
     display: none;
   }
 
   .grid-container {
     grid-template-areas:
-    "... ... header header ... ..."
-    "... ... todo todo ... ...";
+      "... ... header header ... ..."
+      "... ... todo todo ... ...";
     /* "calculator calculator ... ... todo todo"; */
   }
 }
 
-/* Large and up (Desktops) */
-@media (min-width: 992px) {
-
-}
-
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
-
-}
