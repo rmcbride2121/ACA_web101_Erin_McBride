@@ -31,6 +31,9 @@ h1 {
   opacity: 0.75;
   height: 220px;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item5 {
   grid-area: date;
@@ -55,7 +58,7 @@ h1 {
   /* border: solid red; */
   /* background-color: rgba(255, 255, 255, 0.8); */
   text-align: center;
-  padding: 75px 0;
+  padding: 50px 0;
   font-size: 20px;
 }
 
