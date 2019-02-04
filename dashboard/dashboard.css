@@ -19,7 +19,7 @@ h1 {
   grid-area: todo;
   background-color: black;
   opacity: 0.75;
-  height: 280px;
+  height: 220px;
   border-radius: 15px;
 }
 .item3 {
@@ -29,11 +29,12 @@ h1 {
   grid-area: calculator;
   background-color: black;
   opacity: 0.75;
-  height: 280px;
+  height: 220px;
   border-radius: 15px;
 }
 .item5 {
   grid-area: date;
+  margin-top: 35px;
 }
 
 /* Grid Container */
