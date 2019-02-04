@@ -110,26 +110,29 @@ ul {
 /* Media Queries */
 
 @media (max-width: 576px) {
-  .item3, .quote, .item4 {
+  .item3, .quote, .item4, .item5 {
     display: none;
   }
 
   .grid-container {
     grid-template-areas:
     "... ... header header ... ..."
-    "... ... date date ... ..."
     "... ... todo todo ... ...";
   }
 }
 
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-
-}
-
 /* Medium and up (Tablets) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .item3, .item4, .item5 {
+    display: none;
+  }
 
+  .grid-container {
+    grid-template-areas:
+    "... ... header header ... ..."
+    "... ... todo todo ... ...";
+    /* "calculator calculator ... ... todo todo"; */
+  }
 }
 
 /* Large and up (Desktops) */
