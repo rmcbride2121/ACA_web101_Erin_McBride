@@ -24,6 +24,13 @@ p {
 
 /* Media Queries */
 
+/* @media (max-width: 415px) {
+    nav div {
+        display: flex;
+        flex-shrink: 1;
+    }
+} */
+
 /* Small and up (Landscape Phones) */
 @media (min-width: 100px) {
   /* Grid Items */
@@ -104,6 +111,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-shrink: 1;
   }
 
   nav div {
