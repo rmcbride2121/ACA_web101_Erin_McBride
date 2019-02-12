@@ -1,26 +1,35 @@
+/* Base Styles */
+body {
+  margin: auto;
+  font-family: raleway;
+}
+
+header {
+  background-color: #3c99d1;
+  color: white;
+}
+
+main {
+  background-color: #f9f9f9;
+}
+
+/* Use this class to add a red border */
 .boxy {
   border: solid 5px red;
 }
 
 /* Media Queries */
 
+/* This makes the nav bar disappear */
 @media (max-width: 335px) {
-    .nav {
-        display: none;
-    }
+  .nav {
+    display: none;
+  }
 }
 
+/* Mobile View */
 @media (min-width: 100px) {
-  body {
-    margin: auto;
-    color: white;
-    font-family: raleway;
-  }
-
-  header {
-    background-color: #3c99d1;
-  }
-
+  /* Header */
   .banner {
     display: flex;
     flex-direction: row;
@@ -31,7 +40,6 @@
     width: 100px;
     height: 100px;
     margin: 3% 10%;
-    background-color: #0795c3;
     border-radius: 25px;
   }
 
@@ -45,12 +53,13 @@
 
   nav a {
     margin: auto 5px;
+    padding-bottom: 5px;
     text-decoration: none;
     color: white;
   }
 
   nav a:hover {
-    border-bottom: solid 5px white;
+    border-bottom: solid 2px white;
   }
 
   .intro {
@@ -62,6 +71,7 @@
     padding: auto 10px;
   }
 
+  /* Main */
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -73,26 +83,68 @@
     justify-content: center;
     align-items: center;
   }
+
+  .video-iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% auto;
+  }
+
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  video {
+    width: 420px;
+    height: 340px;
+  }
+
+  .iframe-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
+/* Tablet View */
 @media (min-width: 580px) {
+  /* Header */
+  nav a {
+    margin: auto 15px;
+  }
+
+  /* Main */
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  nav a {
-    margin: auto 15px;
+  .video-iframe {
+    margin: 5% auto;
   }
 }
 
+/* Desktop View */
 @media (min-width: 1040px) {
+  /* Header */
+  nav a {
+    margin: auto 20px;
+  }
+
+  /* Main */
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  nav a {
-    margin: auto 20px;
+  .video-iframe {
+    display: flex;
+    flex-direction: row;
   }
 }
