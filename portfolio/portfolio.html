@@ -4,17 +4,21 @@
     <meta name="viewport" content="width=device-width, minimum-scale=0.1" />
     <title>Erin McBride | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Raleway"
+    />
   </head>
-
   <body>
-    <header class="boxy">
+    <header>
       <div class="banner">
         <div>
-          <a href="../landingPage/index.html"><img
-            src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
-            class="logo"
-            alt="austin coding academy logo"
+          <a href="../landingPage/index.html"
+            ><img
+              src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
+              class="logo"
+              alt="austin coding academy logo"
           /></a>
         </div>
         <div class="nav">
@@ -33,7 +37,8 @@
         </h4>
       </div>
     </header>
-    <main class="boxy">
+    <!-- Hi Keith! These portfolio items look bad right now but don't worry, I am trying to think of about how style these. -->
+    <main>
       <div class="container">
         <div class="item boxy"><a href="../cssBlog/blog.html">cssBlog</a></div>
         <div class="item boxy">
@@ -57,11 +62,38 @@
       <div class="video-iframe">
         <div class="video-section">
           <p>Here is an example of the video element.</p>
-          <video src="https://www.w3schools.com/tags/movie.ogg" controls></video>
+          <video
+            src="https://www.w3schools.com/tags/movie.ogg"
+            controls
+          ></video>
         </div>
         <div class="iframe-section">
-            <p>And here is an example of a video using the iframe element.</p>
-            <iframe width="440" height="320" src="https://www.youtube.com/embed/owsfdh4gxyc" frameborder="0" allowfullscreen></iframe>
+          <p>And here is an example of the iframe element.</p>
+          <iframe
+            id="inlineFrameExample"
+            title="Inline Frame Example"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="form">
+          <h3>Hire Me</h3>
+          <form action="">
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+            <label for="location">Location</label>
+            <input type="text" name="location" />
+            <label for="fieldset">Message</label>
+            <fieldset name="fieldset"></fieldset>
+            <div class="btn-container">
+              <button>Reset</button>
+              <button>Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
