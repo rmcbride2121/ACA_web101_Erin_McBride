@@ -1,13 +1,14 @@
-
+/* Use this class to add a red border */
 .boxy {
     border: solid 5px red;
-}
+  }
 
 /* Media Queries */
 
 @media (min-width: 100px) {
     body {
         margin: auto 15%;
+        font-family: raleway;
     }
 
     img {

@@ -1,0 +1,127 @@
+/* Base Styles */
+body {
+  margin: auto;
+  font-family: raleway;
+}
+
+header {
+  background-color: #3c99d1;
+  color: white;
+  padding-bottom: 1px;
+}
+
+/* Use this class to add a red border */
+.boxy {
+  border: solid 5px red;
+}
+
+/* Media Queries */
+
+/* This makes the nav bar disappear */
+@media (max-width: 335px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) {
+  /* Header */
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 3% 10%;
+    border-radius: 25px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-top: 20%;
+  }
+
+  nav a {
+    margin: auto 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav a:hover {
+    border-bottom: solid 2px white;
+  }
+
+  /* Main */
+  .container {
+    background-color: #3c99d1;
+  }
+
+  .form {
+    min-height: 200px;
+    max-width: 500px;
+    margin: auto;
+    padding: 5%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2,
+  label {
+    color: white;
+  }
+
+  input,
+  fieldset {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: white;
+  }
+
+  fieldset {
+    height: 100px;
+  }
+
+  button {
+    width: 7rem;
+    height: 2.5rem;
+    color: #3c99d1;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 580px) {
+  /* Header */
+  nav a {
+    margin: auto 15px;
+  }
+}
+
+@media (min-width: 1040px) {
+  /* Header */
+  nav a {
+    margin: auto 20px;
+  }
+}
