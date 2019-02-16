@@ -9,6 +9,11 @@
     body {
         margin: auto 15%;
     }
+
+    img {
+        border-radius: 50%;
+        border: solid 2px lightgrey;
+      }
 }
 
 @media (min-width: 600px) {
