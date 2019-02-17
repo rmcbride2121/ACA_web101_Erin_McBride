@@ -21,7 +21,6 @@
     body {
         margin: auto 5%;
         display: grid;
-        grid-template-columns: 2f 1fr;
     }
 
     .container {
