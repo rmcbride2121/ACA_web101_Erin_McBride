@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=0.1" />
     <title>Erin McBride | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="animate.min.css">
     <link
       rel="stylesheet"
       type="text/css"
       href="//fonts.googleapis.com/css?family=Raleway"
     />
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
   </head>
   <body>
     <header>
@@ -17,28 +19,28 @@
           <a href="../landingPage/index.html"
             ><img
               src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
-              class="logo"
+              class="logo animated bounceInRight delay-5s"
               alt="austin coding academy logo"
           /></a>
         </div>
         <div class="nav">
           <nav>
-            <a href="../resume/resume.html">Resume</a>
-            <a href="../aboutMe/aboutMe.html">About Me</a>
-            <a href="../cssBlog/blog.html">My Blog</a>
-            <a href="../contactMe/contactMe.html">Hire Me</a>
+            <!-- <a href="../resume/resume.html" class="animated bounceInLeft delay-2s">Resume</a> -->
+            <a href="../aboutMe/aboutMe.html" class="animated bounceInLeft delay-2s">About Me</a>
+            <a href="../cssBlog/blog.html" class="animated bounceInLeft delay-3s">My Blog</a>
+            <a href="../contactMe/contactMe.html" class="animated bounceInLeft delay-4s">Hire Me</a>
           </nav>
         </div>
       </div>
       <div class="intro">
-        <h1>Web Developer Portfolio</h1>
-        <h4>
+        <h1 class="animated bounceInDown">Web Developer Portfolio</h1>
+        <h4 class="animated bounceInUp delay-1s">
           I am a student in Austin Coding Academy's web 101 course. Below are
           some of the projects I have been working on in class.
         </h4>
       </div>
     </header>
-    <!-- Hi Keith! These portfolio items look bad right now but don't worry, I am trying to think of about how style these. -->
+    <!-- Hi Keith! These portfolio items look bad right now but don't worry, I am trying to think of how style these. -->
     <main>
       <div class="container">
         <div class="item boxy"><a href="../cssBlog/blog.html">cssBlog</a></div>
@@ -60,7 +62,7 @@
           <a href="../landingPage/index.html">landingPage</a>
         </div>
       </div>
-      <div class="video-iframe">
+      <div class="video-iframe" id="myelement">
         <div class="video-section">
           <p>Here is an example of the video element.</p>
           <video

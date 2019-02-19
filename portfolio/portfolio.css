@@ -14,6 +14,30 @@ main {
   background-color: #f9f9f9;
 }
 
+/* Animation */
+
+@keyframes myAnimation{
+  0%{
+    opacity: 1;
+    transform: rotateX(90deg);
+  }
+  50%{
+    opacity: 0.5;
+    transform: rotateX(0deg);
+  }
+  100%{
+    display: none;
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+}
+
+#myelement{
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
 /* Use this class to add a red border */
 .boxy {
   border: solid 5px red;
