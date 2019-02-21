@@ -1,0 +1,72 @@
+.container {
+  width: 50px;
+  margin: 50px auto;
+}
+
+.squares {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 30px auto;
+}
+
+/* Odd Squares Double in Size */
+
+.squares:nth-child(odd) {
+  transition: all 2.5s ease-in-out;
+}
+
+.container:hover .squares:nth-child(odd) {
+  transform: translate(300px) rotate(360deg) scale(2);
+  border-radius: 50%;
+}
+
+/* Even Squares reduce by half their size */
+
+.squares:nth-child(even) {
+  transition: all 1s ease-in-out;
+}
+
+.container:hover .squares:nth-child(even) {
+  transform: translate(-300px) rotate(-360deg) scale(0.5);
+  border-radius: 50%;
+}
+
+/* Square Colors */
+
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: green;
+}
+.item3 {
+  background-color: blue;
+}
+.item4 {
+  background-color: yellow;
+}
+.item5 {
+  background-color: orange;
+}
+.item6 {
+  background-color: purple;
+}
+.item7 {
+  background-color: pink;
+}
+.item8 {
+  background-color: brown;
+}
+.item9 {
+  background-color: black;
+}
+.item10 {
+  background-color: indigo;
+}
+.item11 {
+  background-color: yellowgreen;
+}
+.item12 {
+  background-color: burlywood;
+}
