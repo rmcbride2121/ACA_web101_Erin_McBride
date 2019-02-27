@@ -1,0 +1,61 @@
+ /* Use this class to add a red border */
+ .boxy {
+    border: solid 5px red;
+  }
+
+/* Base Styles */
+body {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: #3c99d1;
+  }
+
+  .container {
+      height: 500px;
+      width: 600px;
+      margin: 6% auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+/* adds borders to all boxes in tic tac toe design */
+  .topLeft {
+    border-bottom: solid 10px white;
+  }
+
+  .topMid {
+    border-bottom: solid 10px white;
+    border-right: solid 10px white;
+    border-left: solid 10px white;
+  }
+
+  .topRight {
+    border-bottom: solid 10px white;
+  }
+
+  .midLeft {
+    border-bottom: solid 10px white;
+  }
+
+  .midMid {
+    border-right: solid 10px white;
+    border-left: solid 10px white;
+    border-bottom: solid 10px white;
+  }
+
+  .midRight {
+    border-bottom: solid 10px white;
+  }
+
+  .bottomLeft {
+
+  }
+
+  .bottomMid {
+    border-right: solid 10px white;
+    border-left: solid 10px white;
+  }
+
+  .bottomRight {
+    
+  }
