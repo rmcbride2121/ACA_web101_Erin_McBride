@@ -12,4 +12,5 @@ function changeMarkerToO(){
 
 function placeMark(){
     console.log("The div button was clicked!")
+    document.getElementById("demo").innerHTML = "You click on the box!";
 }
