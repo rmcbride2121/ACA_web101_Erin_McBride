@@ -18,6 +18,12 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .box {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+  }
+
 /* adds borders to all boxes in tic tac toe design */
   .topLeft {
     border-bottom: solid 10px white;

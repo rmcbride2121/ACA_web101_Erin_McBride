@@ -1,13 +1,13 @@
-var gameMarker = "x"
+var gameMarker = 'x';
 
 function changeMarkerToX(){
-    var gameMarker = "0"
-    console.log("The O button was clicked!")
+    gameMarker = "x";
+    console.log("The x button was clicked!")
 }
 
 function changeMarkerToO(){
-    var gameMarker = "X"
-    console.log("The X button was clicked!")
+    gameMarker = "o";
+    console.log("The o button was clicked!")
 }
 
 function placeMark(myDiv){
