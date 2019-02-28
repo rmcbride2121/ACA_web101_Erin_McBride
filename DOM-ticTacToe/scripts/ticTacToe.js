@@ -10,7 +10,7 @@ function changeMarkerToO(){
     console.log("The X button was clicked!")
 }
 
-function placeMark(){
+function placeMark(myDiv){
     console.log("The div button was clicked!")
-    document.getElementById("demo").innerHTML = "You click on the box!";
+    document.getElementById(myDiv).innerHTML = gameMarker;
 }
