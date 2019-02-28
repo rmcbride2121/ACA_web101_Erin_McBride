@@ -24,6 +24,12 @@ body {
     text-align: center;
   }
 
+  button {
+    background-color: white;
+    color: #3c99d1;
+    font-size: 70px;
+  }
+
 /* adds borders to all boxes in tic tac toe design */
   .topLeft {
     border-bottom: solid 10px white;
