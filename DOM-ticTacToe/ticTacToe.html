@@ -14,6 +14,9 @@
     />
   </head>
   <body>
+    <div class="page-container">
+        <button onclick="changeMarkerToX()">X</button>
+        <button onclick="changeMarkerToO()">O</button>
     <div class="container">
         <div class="box topLeft" id="topLeft" onclick="placeMark('topLeft')"></div>
         <div class="box topMid" id="topMid" onclick="placeMark('topMid')"></div>
@@ -25,9 +28,7 @@
         <div class="box bottomMid" id="bottomMid" onclick="placeMark('bottomMid')"></div>
         <div class="box bottomRight" id="bottomRight" onclick="placeMark('bottomRight')"></div>
     </div>
-    <button onclick="changeMarkerToX()">X</button>
-    <button onclick="changeMarkerToO()">O</button>
-
+    </div>
     <script src="scripts/ticTacToe.js"></script>
   </body>
 </html>
