@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -13,87 +13,90 @@
     />
   </head>
   <body>
-    <div class="grid-container">
-      <div class="item1">
-        <h1>Hello Erin</h1>
-        <h3 class="quote">Quote of the Day</h3>
-        <p class="quote">"Something something something.”</p>
+      
+    <div class="container">
+      <div class="container1 boxy">
+          <div class="clock boxy">
+              <iframe
+                src="http://free.timeanddate.com/clock/i6m1g7dg/n24/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw8/mqd100/mhcfff/mhl15/mhw4/mhd100/mmv0/hhcff9/hmcff9"
+                frameborder="0"
+                width="110"
+                height="110"
+              ></iframe>
+            </div>
+            <div class="date-time boxy">
+                <iframe
+                  src="http://free.timeanddate.com/clock/i6m1i5y7/n24/fs20/fcfff/tct/pct/tt0/tw0/tm1/ts1/tb4"
+                  frameborder="0"
+                  width="124"
+                  height="48"
+                  allowTransparency="true"
+                ></iframe>
+              </div>
       </div>
-      <div class="item2">
-        <!-- <div id="checkboxes">
-          <h2>To Do List</h2>
-          <ul>
-            <li><input type="checkbox" /> checkbox 1</li>
-            <li><input type="checkbox" /> checkbox 2</li>
-            <li><input type="checkbox" /> checkbox 3</li>
-            <li><input type="checkbox" /> checkbox 4</li>
-          </ul>
-        </div> -->
-        <div id="list_section">
-          <h2 id="header">To-do list</h2>
-          <ul>
-            <li class="item">Buy movie tickets</li>
-          </ul>
-          <div id="newItemButton"><button href="#">new item</button></div>
-          <form id="newItemForm">
-            <input type="text" id="itemField" placeholder="Item" />
-            <input type="submit" id="add" value="add" />
-          </form>
-        </div>
-      </div>
-      <div class="item3">
-        <iframe
-          src="http://free.timeanddate.com/clock/i6m1g7dg/n24/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw8/mqd100/mhcfff/mhl15/mhw4/mhd100/mmv0/hhcff9/hmcff9"
-          frameborder="0"
-          width="110"
-          height="110"
-        ></iframe>
-      </div>
-      <div class="item4">
-        <div id='calc-contain'>
-  
-            <form name="calculator">
-                  
-                <input type="text" name="answer" />
-                <br>
-                  
-                <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-                <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
-                <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
-                <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
-                <br/>
-                  
-                <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
-                <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
-                <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
-                <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
-                </br>
-                
-                <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
-                <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
-                <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
-                <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
-                </br>
+      <div></div>
+      <div class="container2">
+          
               
-                <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-                <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
-                <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
-                </br>
-            </form>
-        </div>
+                <div class="todo-list boxy">
+                  <div id="list_section">
+                    <h2 id="header">To-do list</h2>
+                    <ul>
+                      <li class="item">Buy movie tickets</li>
+                    </ul>
+                    <div id="newItemButton"><button href="#">new item</button></div>
+                    <form id="newItemForm">
+                      <input type="text" id="itemField" placeholder="Item" />
+                      <input type="submit" id="add" value="add" />
+                    </form>
+                  </div>
+                </div>
+                
+                <div class="greeting boxy">
+                    <h1>Hello Erin</h1>
+                    <button onclick="getLocation()">Get Location!</button>
+                      <p id="my-coordinates"></p>
+                  </div>
+
+                <div class="calculator boxy">
+                  <div id='calc-contain'>
+            
+                      <form name="calculator">
+                            
+                          <input type="text" name="answer" />
+                          <br>
+                            
+                          <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                          <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                          <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                          <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+                          <br/>
+                            
+                          <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                          <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                          <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                          <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+                          </br>
+                          
+                          <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+                          <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+                          <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+                          <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+                          </br>
+                        
+                          <input type="button" value=" c " onclick="calculator.answer.value = ''" />
+                          <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+                          <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+                          <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+                          </br>
+                      </form>
+                  </div>
+                </div>
       </div>
-      <div class="item5">
-        <iframe
-          src="http://free.timeanddate.com/clock/i6m1i5y7/n24/fs20/fcfff/tct/pct/tt0/tw0/tm1/ts1/tb4"
-          frameborder="0"
-          width="124"
-          height="48"
-          allowTransparency="true"
-        ></iframe>
-      </div>
+      
+      
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="todo.js"></script>
+    <script src="scripts/todo.js"></script>
   </body>
 </html>
