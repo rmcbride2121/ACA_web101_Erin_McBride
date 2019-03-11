@@ -1,3 +1,4 @@
+// ToDo List
 $(function() {
   let $list = $("ul");
   let $newItemForm = $("#newItemForm");
@@ -15,6 +16,7 @@ $(function() {
   });
 });
 
+// Geolocation
 var myLocation = document.getElementById("my-coordinates");
 
 function getLocation() {
