@@ -1,10 +1,7 @@
-/* Body */
+/* Main Styles */
 
 body {
   background-color: #003842;
-  /* background-image: url("https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-repeat: no-repeat;
-  background-size: 100%; */
   background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -14,46 +11,13 @@ h1 {
   font-size: 75px;
 }
 
+/* Adds a red border to any element */
+
 .boxy {
   border: solid 5px red;
 }
 
-/* Grid Items */
-
-.greeting {
-  margin: auto;
-  text-align: center;
-}
-.todo-list {
-  background-color: black;
-  opacity: 0.75;
-  border-radius: 15px;
-  height: fit-content;
-  min-height: 200px;
-  min-width: 175px;
-}
-.clock {
-  display: flex;
-  align-items: center;
-  
-}
-.calculator {
-  background-color: black;
-  opacity: 0.75;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  min-height: 200px;
-  min-width: 175px;
-}
-.date-time {
-  display: flex;
-  align-items: center;
-}
-
-/* Grid Container */
+/* Containers */
 
 .container1 {
   display: flex;
@@ -83,6 +47,28 @@ h1 {
   font-size: 20px;
 }
 
+/* Greeting */
+
+.greeting {
+  margin: auto;
+  text-align: center;
+}
+
+/* Clock */
+
+.clock {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Date and Time */
+
+.date-time {
+  display: flex;
+  align-items: center;
+}
+
 /* Coordinates Button */
 
 .location {
@@ -100,6 +86,15 @@ p {
 }
 
 /* To Do List */
+
+.todo-list {
+  background-color: black;
+  opacity: 0.75;
+  border-radius: 15px;
+  height: fit-content;
+  min-height: 200px;
+  min-width: 175px;
+}
 
 .item, button {
   margin: auto;
@@ -132,8 +127,6 @@ li {
   color: #000;
 }
 
-/* Calculator */
-
 input[type='text'] {
   font-size: 12px;
   padding: 6px;
@@ -158,10 +151,41 @@ input[type='submit'] {
   width: 20%;
 }
 
+/* Stress Game */
+
+.stressGame {
+  background-color: black;
+  opacity: 0.75;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  min-height: 200px;
+  min-width: 175px;
+}
+
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  text-align: center;
+}
+
+i {
+  cursor: grabbing;
+}
+
+.hiddenText {
+  display: none;
+}
+
 /* Media Queries */
 
 @media (max-width: 715px) {
-  .todo-list, .calculator {
+  .todo-list, .stressGame {
     display: none;
   }
 }
@@ -171,18 +195,4 @@ input[type='submit'] {
   
 }
 
-/* button code */
 
-.containerButton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin: 20% auto; */
-  padding: 0 5%;
-  text-align: center;
-}
-
-.hiddenText {
-  display: none;
-}
