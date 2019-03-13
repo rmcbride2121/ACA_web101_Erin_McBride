@@ -175,12 +175,24 @@ input[type="submit"] {
   text-align: center;
 }
 
+.stress {
+
+}
+
+.hit {
+  margin-top: 0;
+}
+
 i {
   cursor: grabbing;
 }
 
 .hiddenText {
   display: none;
+}
+
+#newText {
+  margin-top: 0;
 }
 
 /* Media Queries */
