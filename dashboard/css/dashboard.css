@@ -94,6 +94,7 @@ h1 {
   height: fit-content;
   min-height: 244px;
   min-width: 231px;
+  margin-bottom: 2%;
 }
 
 .item,
@@ -164,6 +165,7 @@ input[type="submit"] {
   height: fit-content;
   min-height: 244px;
   min-width: 231px;
+  margin-bottom: 2%;
 }
 
 .containerButton {
