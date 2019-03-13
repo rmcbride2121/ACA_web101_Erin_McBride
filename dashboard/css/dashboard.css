@@ -92,8 +92,8 @@ p {
   opacity: 0.75;
   border-radius: 15px;
   height: fit-content;
-  min-height: 200px;
-  min-width: 175px;
+  min-height: 244px;
+  min-width: 231px;
 }
 
 .item, button {
@@ -161,8 +161,8 @@ input[type='submit'] {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  min-height: 200px;
-  min-width: 175px;
+  min-height: 244px;
+  min-width: 231px;
 }
 
 .containerButton {
@@ -184,7 +184,17 @@ i {
 
 /* Media Queries */
 
-@media (max-width: 715px) {
+@media (max-width: 500px) {
+  .clock {
+    display: none;
+  }
+
+  .date-time {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 830px) {
   .todo-list, .stressGame {
     display: none;
   }
