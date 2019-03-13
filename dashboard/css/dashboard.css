@@ -4,7 +4,7 @@ body {
   background-color: #003842;
   background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h1 {
@@ -35,11 +35,11 @@ h1 {
   display: grid;
   grid-template-rows: 0.5fr 2fr;
   margin: auto;
-  position: absolute; 
-	top: 0; 
-	right: 0; 
-	bottom: 0; 
-	left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .grid-container > div {
@@ -59,7 +59,6 @@ h1 {
 .clock {
   display: flex;
   align-items: center;
-  
 }
 
 /* Date and Time */
@@ -76,9 +75,10 @@ h1 {
   display: flex;
   align-items: center;
   border-radius: 3px;
+  outline: none;
 }
 
-p {
+.my-coordinates {
   height: 30px;
   display: flex;
   align-items: center;
@@ -96,7 +96,8 @@ p {
   min-width: 231px;
 }
 
-.item, button {
+.item,
+button {
   margin: auto;
   list-style: none;
 }
@@ -112,14 +113,14 @@ ul {
 li {
   background-color: #fff;
   color: #000;
-  font-size: 20px;
+  font-size: 15px;
   list-style-type: none;
   width: 60%;
   margin: 0px auto;
   border-radius: 3px;
   border: 1px solid #000;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .item {
@@ -127,14 +128,14 @@ li {
   color: #000;
 }
 
-input[type='text'] {
+input[type="text"] {
   font-size: 12px;
   padding: 6px;
   border: 1px solid #000;
   border-radius: 3px;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #fff;
   color: #000;
   border-radius: 8px;
@@ -195,14 +196,12 @@ i {
 }
 
 @media (max-width: 830px) {
-  .todo-list, .stressGame {
+  .todo-list,
+  .stressGame {
     display: none;
   }
 }
 
 /* Medium and up (Tablets) */
 @media (max-width: 768px) {
-  
 }
-
-

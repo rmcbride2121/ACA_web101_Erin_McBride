@@ -11,65 +11,71 @@
       type="text/css"
       href="//fonts.googleapis.com/css?family=Raleway"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-      
     <div class="container">
-      <div class="container1 boxy">
-          <div class="clock boxy">
-              <iframe
-                src="http://free.timeanddate.com/clock/i6m1g7dg/n24/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw8/mqd100/mhcfff/mhl15/mhw4/mhd100/mmv0/hhcff9/hmcff9"
-                frameborder="0"
-                width="110"
-                height="110"
-              ></iframe>
-            </div>
-            <div class="date-time boxy">
-                <iframe
-                  src="http://free.timeanddate.com/clock/i6m1i5y7/n24/fs20/fcfff/tct/pct/tt0/tw0/tm1/ts1/tb4"
-                  frameborder="0"
-                  width="124"
-                  height="48"
-                  allowTransparency="true"
-                ></iframe>
-              </div>
+      <div class="container1">
+        <div class="clock">
+          <iframe
+            src="http://free.timeanddate.com/clock/i6m1g7dg/n24/szw110/szh110/hocddd/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw8/mqd100/mhcfff/mhl15/mhw4/mhd100/mmv0/hhcff9/hmcff9"
+            frameborder="0"
+            width="110"
+            height="110"
+          ></iframe>
+        </div>
+        <div class="date-time">
+          <iframe
+            src="http://free.timeanddate.com/clock/i6m1i5y7/n24/fs20/fcfff/tct/pct/tt0/tw0/tm1/ts1/tb4"
+            frameborder="0"
+            width="124"
+            height="48"
+            allowTransparency="true"
+          ></iframe>
+        </div>
       </div>
       <div class="container2">
-          
-              
-                <div class="todo-list boxy">
-                  <div id="list_section">
-                    <h2 id="header">To-do list</h2>
-                    <ul>
-                      <!-- <li class="item">Buy movie tickets</li> -->
-                    </ul>
-                    <div id="newItemButton"><button href="#">new item</button></div>
-                    <form id="newItemForm">
-                      <input type="text" id="itemField" placeholder="Item" />
-                      <input type="submit" id="add" value="add" />
-                    </form>
-                  </div>
-                </div>
-                
-                <div class="greeting boxy">
-                    <h1>Hello Erin</h1>
-                    <button class="location" onclick="getLocation()" onclick="function()">Find my Coordinates!</button>
-                      <p id="my-coordinates"></p>
-                  </div>
+        <div class="todo-list">
+          <div id="list_section">
+            <h2 id="header">To-do list</h2>
+            <ul>
+              <!-- <li class="item">Buy movie tickets</li> -->
+            </ul>
+            <div id="newItemButton"><button href="#">new item</button></div>
+            <form id="newItemForm">
+              <input type="text" id="itemField" placeholder="Item" />
+              <input type="submit" id="add" value="Add" />
+            </form>
+          </div>
+        </div>
 
-                <div class="stressGame boxy">
-                    <div class="containerButton">
-                        <p>Stressed? Hit the laptop</p>
-                        <i onclick="revealMessage()" class="fas fa-laptop fa-3x" style="color: #339af0;"></i>
-                        <p id="hiddenText" class="hiddenText">Nice!</p>
-                        <p id="newText"></p>
-                    </div>
-                  
-                </div>
+        <div class="greeting">
+          <h1>Hello Erin</h1>
+          <button class="location" onclick="getLocation()" onclick="function()">
+            Find my Coordinates!
+          </button>
+          <p id="my-coordinates" class="my-coordinates"></p>
+        </div>
+
+        <div class="stressGame">
+          <div class="containerButton">
+            <h2>Stressed?</h2>
+            <p>Hit the laptop</p>
+            <i
+              onclick="revealMessage()"
+              class="fas fa-laptop fa-3x"
+              style="color: #339af0;"
+            ></i>
+            <p id="hiddenText" class="hiddenText">Nice!</p>
+            <p id="newText"></p>
+          </div>
+        </div>
       </div>
-      
-      
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/todo.js"></script>
