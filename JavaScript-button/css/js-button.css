@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12% auto;
+    margin: 5% auto;
 }
 
 i {
@@ -27,5 +27,17 @@ i {
 
 .hiddenText {
     display: none;
-    padding: 20px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#resetButton {
+    display: none;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(114, 114, 235);
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
 }

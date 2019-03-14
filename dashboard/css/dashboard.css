@@ -204,7 +204,7 @@ i {
       flex-direction: column;
     }
 
-  .date-time, .clock {
+  .date, .clock {
     margin: 3.5% auto;
   }
 }
