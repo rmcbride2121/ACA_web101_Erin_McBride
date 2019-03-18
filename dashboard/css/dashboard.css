@@ -175,10 +175,6 @@ input[type="submit"] {
   text-align: center;
 }
 
-.stress {
-
-}
-
 .hit {
   margin-top: 0;
 }
@@ -192,16 +188,15 @@ i {
 }
 
 #newText {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 #resetButton {
   display: none;
   height: 35px;
   width: 100px;
-  background-color: rgb(114, 114, 235);
+  background-color: white;
   outline: none;
-  color: white;
   border-radius: 5px;
   font-size: 15px;
 }

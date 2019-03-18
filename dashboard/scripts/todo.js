@@ -43,14 +43,14 @@ function revealMessage() {
     document.getElementById("resetButton").style.display = "block";
     clicks++;
     console.log(clicks);
-    document.getElementById("newText").innerHTML = 'Current number of clicks: ' + clicks;
+    document.getElementById("newText").innerHTML = 'Punch counter: ' + clicks;
 }
 
 // Reset Button
 
 function resetButton() {
   if (clicks == 0) {
-      document.getElementById("oops").innerHTML = 'Oops! Counter is already reset';
+      document.getElementById("oops").innerHTML = 'Counter is already reset';
   };
   clicks = 0;
   document.getElementById("newText").innerHTML = 'Punch counter: ' + clicks;
