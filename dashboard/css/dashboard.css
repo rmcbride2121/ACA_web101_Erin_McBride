@@ -204,12 +204,12 @@ i {
 /* Media Queries */
 
 @media (max-width: 500px) {
+  .container1 {
+    flex-direction: column;
+  }
 
-    .container1 {
-      flex-direction: column;
-    }
-
-  .date, .clock {
+  .date,
+  .clock {
     margin: 3.5% auto;
   }
 }
