@@ -13,7 +13,7 @@ function revealMessage() {
 // Reset Button
 
 function resetButton() {
-    if (clicks = 0) {
+    if (clicks == 0) {
         document.getElementById("oops").innerHTML = 'Oops! Counter is already reset';
     };
     clicks = 0;
