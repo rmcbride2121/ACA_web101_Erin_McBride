@@ -44,6 +44,9 @@ function revealMessage() {
   clicks++;
   console.log(clicks);
   document.getElementById("newText").innerHTML = "Punch counter: " + clicks;
+  if (clicks > 10) {
+    document.getElementById("newText").innerHTML = "Stop! He's already dead..";
+  }
 }
 
 // Reset Button
