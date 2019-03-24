@@ -11,7 +11,7 @@ header {
 }
 
 main {
-  background-color: #f9f9f9;
+  background-color: #F7F9F9;
 }
 
 /* Use this class to add a red border */
@@ -76,8 +76,9 @@ main {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 10px 10%;
+    grid-gap: 30px;
+    justify-items: center;
+    padding: 40px 10%;
   }
 
   .item {
@@ -85,7 +86,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: 
+    box-shadow: 2px 5px 10px #888888;
   }
 
   .item:hover {
@@ -151,11 +152,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
   }
 
   .social {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+  }
+
+  .icon:hover {
+    color: rgb(238, 230, 230);
   }
 }
 
