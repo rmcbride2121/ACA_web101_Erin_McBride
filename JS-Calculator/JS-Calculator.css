@@ -1,0 +1,14 @@
+.calculator {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+input {
+    width: 10rem;
+}
+
+.button {
+    border: 1px solid black;
+    width: 2rem;
+    text-align: center;   
+}

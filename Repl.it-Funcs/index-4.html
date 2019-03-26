@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project 4</title>
+  </head>
+  <body>
+    <script>
+              // Project 4 - FizzBuzz
+              // Looping through all numbers 1 through 1000, I want you to log:
+
+              // 'Fizz' if the number is divisible by only three
+              // 'Buzz' if the number is divisible by only five
+              // 'FizzBuzz' if the number is divisible by three and five
+              // the number itself if it is none of these
+              // Build this in a repl.it or codepen(with codePen open the console)
+              // Or, use the RunKit sandbox below :)
+
+        for (let i=0; i<1000; i++) {
+            if (i % 3 == 0) {
+            console.log('Fizz');
+            }
+            if (i % 5 == 0) {
+            console.log('Buzz');
+            }
+            if(i % 3 === 0 && i % 5 === 0) {
+                console.log('FizzBuzz')
+            }
+        }
+    </script>
+  </body>
+</html>

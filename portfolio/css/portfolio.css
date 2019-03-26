@@ -78,11 +78,13 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 30px;
     justify-items: center;
+    align-items: center;
     padding: 40px 10%;
   }
 
   .item {
-    min-height: 270px;
+    height: 400px;
+    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +92,9 @@ main {
   }
 
   .item:hover {
-
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+    transition-timing-function: ease-out;
   }
 
   .footer {
@@ -162,7 +166,11 @@ main {
     width: 10rem;
   }
 
-  .icon:hover {
+  i {
+    color: white;
+  }
+
+  i:hover {
     color: rgb(238, 230, 230);
   }
 }
